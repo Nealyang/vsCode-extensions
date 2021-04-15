@@ -1,6 +1,6 @@
-# execcommand README
+# progressdemo README
 
-This is the README for your extension "execcommand". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "progressdemo". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
