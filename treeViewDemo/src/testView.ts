@@ -33,8 +33,6 @@ const tree = {
 function aNodeWithIdTreeDataProvider(): vscode.TreeDataProvider<any> {
   return {
     getChildren: (ele): any[] => {
-      console.log('getChildren',ele);
-
       const arr : any[]= [];
       const curTree = ele || tree;
       for(let item in curTree){
@@ -51,6 +49,7 @@ function aNodeWithIdTreeDataProvider(): vscode.TreeDataProvider<any> {
           arr.push(activeItem);
         }
       }
+      console.log('getChildren:::','入参：',ele,'，出参：',arr);
       return arr;
     },
     getTreeItem:(ele):vscode.TreeItem=>{

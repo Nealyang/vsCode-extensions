@@ -10,7 +10,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onView:id_1"
+		"onView:id_1",
+		"onView:node_dependencies"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -32,14 +33,14 @@
 		"views": {
 			"explorer":[
 				{
-					"id": "id_explorer",
-					"name": "资源管理器里面"
+					"id": "node_dependencies",
+					"name": "项目资源依赖"
 				}
 			],
 			"neal_Tree":[
 				{
 					"id": "id_1",
-					"name": "第一组"
+					"name": "简单的树形 demo"
 				},
 				{
 					"id": "id_2",
