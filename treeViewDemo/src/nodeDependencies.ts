@@ -4,9 +4,7 @@ import * as path from 'path';
 
 export class DepNodeProvider implements vscode.TreeDataProvider<Dependency>{
 
-  constructor(private workspaceRoot: string) {
-
-  }
+  constructor(private workspaceRoot: string) {}
 
   getTreeItem(element: Dependency): vscode.TreeItem {
     return element;
