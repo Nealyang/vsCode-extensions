@@ -11,6 +11,8 @@ export class DepNodeProvider implements vscode.TreeDataProvider<Dependency>{
   }
 
   getChildren(element?: Dependency): Thenable<Dependency[]> {
+    console.log('getChildren');
+
     if (!this.workspaceRoot) {
       vscode.window.showInformationMessage('No dependency in empty workspace');
       return Promise.resolve([]);

@@ -110,6 +110,7 @@ class DepNodeProvider {
         return element;
     }
     getChildren(element) {
+        console.log('getChildren');
         if (!this.workspaceRoot) {
             vscode.window.showInformationMessage('No dependency in empty workspace');
             return Promise.resolve([]);
